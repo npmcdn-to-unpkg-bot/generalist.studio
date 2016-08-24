@@ -13,6 +13,12 @@
     <meta name="keywords" content="">
     <style>
 
+      html,
+      body,
+      .vh100 {
+        min-height: 100vh;
+      }
+
       body, .h0, h1, h2, h3, h4, h5, h6 {
         font-family: -apple-system,
         BlinkMacSystemFont,
@@ -27,6 +33,20 @@
         sans-serif;
       }
 
+      .fullScreenPic {
+        position: fixed;
+        background-size: cover;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .hshslImage {
+        background-image: url(https://raw.githubusercontent.com/hshsl/hshsl.github.io/master/images/inside_hshsl_180.jpg);
+      }
+
       .serif {
         font-family: Athelas,
         Georgia,
@@ -39,16 +59,52 @@
         margin-right: auto;
       }
 
+      .border-red {
+        border-color: #FF4136;
+      }
+
+      .border-blue {
+        border-color: #0074D9;
+      }
+      .border-black {
+        border-color: #000;
+      }
+      .hover-underline:hover {
+        text-decoration: underline;
+      }
+
+      .fw200 {
+        font-weight: 200;
+      }
+
+      .fw400 {
+        font-weight: 400;
+      }
+
+      .fw500 {
+        font-weight: 500;
+      }
+
+
 
     </style>
   </head>
 
-  <body class="m2">
+  <body class="border-box p2">
 
-    <header class="container">
-      <h1 class="m0">generalist.boutique</h1>
+    <div class="fullScreenPic hshslImage"></div>
 
+    <header class="container flex flex-center">
+      <h1 class="m0 fw500 flex-auto">Generalist.Studio</h1>
+      <nav class="flex flex-justify">
+        <a href="" id="nav1" class="btn hover-underline fw200">nav1</a>
+        <a href="" id="nav2" class="btn hover-underline fw200">nav2</a>
+        <a href="" id="nav3" class="btn hover-underline fw200">nav3</a>
+        <a href="" id="nav4" class="btn hover-underline fw200">nav4</a>
+      </nav>
     </header>
+
+
 
   </body>
 
