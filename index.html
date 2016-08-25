@@ -47,6 +47,10 @@
         background-image: url(https://raw.githubusercontent.com/hshsl/hshsl.github.io/master/images/inside_hshsl_180.jpg);
       }
 
+      .mainBag {
+        background-image: url(images/main_bag.jpg);
+      }
+
       .serif {
         font-family: Athelas,
         Georgia,
@@ -85,6 +89,19 @@
         font-weight: 500;
       }
 
+      .bagBlue {
+        color: rgb(146,190,209);
+      }
+
+      .bagBrown {
+        color: rgb(252,231,228);
+      }
+
+      .my2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
 
 
     </style>
@@ -92,19 +109,16 @@
 
   <body class="border-box p2">
 
-    <div class="fullScreenPic hshslImage"></div>
+      <header class="container flex flex-center py2">
+        <h1 class="m0 bagBrown fw500 flex-auto">Generalist.Studio</h1>
+        <nav class="flex flex-justify">
+          <a href="" id="nav1" class="btn bagBrown hover-underline fw200">about</a>
+          <a href="" id="nav3" class="btn bagBrown hover-underline fw200">store</a>
+          <a href="" id="nav4" class="btn bagBrown hover-underline fw200">contact</a>
+        </nav>
+      </header>
 
-    <header class="container flex flex-center">
-      <h1 class="m0 fw500 flex-auto">Generalist.Studio</h1>
-      <nav class="flex flex-justify">
-        <a href="" id="nav1" class="btn hover-underline fw200">nav1</a>
-        <a href="" id="nav2" class="btn hover-underline fw200">nav2</a>
-        <a href="" id="nav3" class="btn hover-underline fw200">nav3</a>
-        <a href="" id="nav4" class="btn hover-underline fw200">nav4</a>
-      </nav>
-    </header>
-
-
+    <div class="fullScreenPic mainBag"></div>
 
   </body>
 
