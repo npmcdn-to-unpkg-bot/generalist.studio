@@ -34,13 +34,12 @@
       }
 
       .fullScreenPic {
-        position: fixed;
+        position: relative;
         background-size: cover;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: -1;
       }
 
       .hshslImage {
@@ -93,8 +92,12 @@
         color: rgb(146,190,209);
       }
 
-      .bagBrown {
+      .bagPink {
         color: rgb(252,231,228);
+      }
+
+      .bagLightBrown {
+        color: rgb(252,227,white1);
       }
 
       .my2 {
@@ -102,23 +105,71 @@
         margin-bottom: 1rem;
       }
 
+      .mt10 {
+        margin-top: 10rem;
+      }
+      .mt-8 {
+        margin-top: -8rem;
+      }
 
+      .btn-blue {
+        color: #fff;
+        background-color: rgb(103,151,171);
+        border-radius: 3px;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .align-center {
+        align-content: center;
+      }
+
+      .bagBlue2 {
+        color: rgb(80,121,140);
+      }
+
+      .bagBlue3 {
+        color: rgb(103,151,171);
+      }
+
+      .h0 {
+        font-size: 4rem;
+      }
 
     </style>
   </head>
 
-  <body class="border-box p2">
+  <body class="border-box">
 
-      <header class="container flex flex-center py2">
-        <h1 class="m0 bagBrown fw500 flex-auto">Generalist.Studio</h1>
+
+    <header class="fixed top-0 left-0 right-0 z1">
+      <div class="container flex flex-center py2">
+        <h1 class="m0 white fw500 flex-auto">Generalist.Studio</h1>
         <nav class="flex flex-justify">
-          <a href="" id="nav1" class="btn bagBrown hover-underline fw200">about</a>
-          <a href="" id="nav3" class="btn bagBrown hover-underline fw200">store</a>
-          <a href="" id="nav4" class="btn bagBrown hover-underline fw200">contact</a>
+          <a href="" id="nav1" class="btn white hover-underline fw200">about</a>
+          <a href="" id="nav3" class="btn white hover-underline fw200">store</a>
+          <a href="" id="nav4" class="btn white hover-underline fw200">contact</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
-    <div class="fullScreenPic mainBag"></div>
+    <section class="fullScreenPic mainBag">
+      <div class="vh100 flex justify-center align-center flex-column">
+        <p class="h0 center white serif">Generalist Studio</p>
+        <a href="" class="btn btn-blue h3 fw200 col-1 block center mx-auto">$$$$</a>
+      </div>
+    </section>
+
+    <section class="vh100">
+
+      <div class="flex justify-center">
+        <a href="" class="btn h2">hi there!</a>
+      </div>
+
+    </section>
+
 
   </body>
 
